@@ -1,13 +1,7 @@
 pyCelex.py: a python interface to CELEX2.
 =========================================
 
-Some code I wrote a while ago for reading stuff, mostly morpho-phonological
-data, from CELEX2. Feel free to see if it works for you, fork it, whatever.
-
-Currently hard-coded to read just the English lexicon, but it shouldn't be hard
-to parameterize that.
-
--Max
+Generalized version of the pyCelex code originally writen by maxbane that works for German and Dutch.
 
 Usage example
 -------------
@@ -17,7 +11,7 @@ from the CELEX2 disc containing the `README`, and subdirectories `awk`, `c`,
 `dutch`, `english`, `german`, etc.
 
     >>> import pyCelex
-    >>> celex = pyCelex.buildWordFormDict('/path/to/CELEX2')
+    >>> celex = pyCelex.buildWordFormDict('/path/to/CELEX2','ENGLISH')
     >>> celex['run']
     [WordForm('run', 75882, 39588, 987, 'S', '@'),
      WordForm('run', 75883, 39589, 626, 'i', '@'),
